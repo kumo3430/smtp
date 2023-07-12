@@ -11,6 +11,8 @@
 		1377704D2A5D7FA800E87ED0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1377704C2A5D7FA800E87ED0 /* ContentView.swift */; };
 		1377704F2A5D7FA900E87ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1377704E2A5D7FA900E87ED0 /* Assets.xcassets */; };
 		137770522A5D7FA900E87ED0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 137770512A5D7FA900E87ED0 /* Preview Assets.xcassets */; };
+		1377705A2A5D7FF800E87ED0 /* SwiftSMTP in Frameworks */ = {isa = PBXBuildFile; productRef = 137770592A5D7FF800E87ED0 /* SwiftSMTP */; };
+		1377705C2A5E3A9200E87ED0 /* verifyRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1377705B2A5E3A9200E87ED0 /* verifyRegister.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,7 @@
 		1377704C2A5D7FA800E87ED0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1377704E2A5D7FA900E87ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		137770512A5D7FA900E87ED0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1377705B2A5E3A9200E87ED0 /* verifyRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyRegister.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +29,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1377705A2A5D7FF800E87ED0 /* SwiftSMTP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +57,7 @@
 			children = (
 				1377704A2A5D7FA800E87ED0 /* smtpApp.swift */,
 				1377704C2A5D7FA800E87ED0 /* ContentView.swift */,
+				1377705B2A5E3A9200E87ED0 /* verifyRegister.swift */,
 				1377704E2A5D7FA900E87ED0 /* Assets.xcassets */,
 				137770502A5D7FA900E87ED0 /* Preview Content */,
 			);
@@ -83,6 +88,9 @@
 			dependencies = (
 			);
 			name = smtp;
+			packageProductDependencies = (
+				137770592A5D7FF800E87ED0 /* SwiftSMTP */,
+			);
 			productName = smtp;
 			productReference = 137770472A5D7FA800E87ED0 /* smtp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +119,9 @@
 				Base,
 			);
 			mainGroup = 1377703E2A5D7FA800E87ED0;
+			packageReferences = (
+				137770582A5D7FF800E87ED0 /* XCRemoteSwiftPackageReference "Swift-SMTP" */,
+			);
 			productRefGroup = 137770482A5D7FA800E87ED0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1377704D2A5D7FA800E87ED0 /* ContentView.swift in Sources */,
+				1377705C2A5E3A9200E87ED0 /* verifyRegister.swift in Sources */,
 				1377704B2A5D7FA800E87ED0 /* smtpApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		137770582A5D7FF800E87ED0 /* XCRemoteSwiftPackageReference "Swift-SMTP" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Kitura/Swift-SMTP";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		137770592A5D7FF800E87ED0 /* SwiftSMTP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 137770582A5D7FF800E87ED0 /* XCRemoteSwiftPackageReference "Swift-SMTP" */;
+			productName = SwiftSMTP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1377703F2A5D7FA800E87ED0 /* Project object */;
 }
