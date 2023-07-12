@@ -12,8 +12,8 @@ struct verifyRegister: View {
     @State private var Verify = ""
     @Binding var verify :Int
     @State private var messenge = ""
-//    @State var timeRemaining = 300
-    @State var timeRemaining = 60
+    @State var timeRemaining = 300
+//    @State var timeRemaining = 60
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 
     
